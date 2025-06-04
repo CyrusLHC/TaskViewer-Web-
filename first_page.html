@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="icon" type="image/png" href="taskviewer_logo.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            animation: gradientAnimation 5s ease infinite;
+            background-size: 400% 400%;
+        }
+        .splash-container {
+            text-align: center;
+        }
+        .logo {
+            max-width: 900px;
+            height: auto;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-container">
+        <img src="taskviewer_logo_rb.png" alt="TaskViewer Logo" class="logo">
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 5000);
+    </script>
+</body>
+</html> 

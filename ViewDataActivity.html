@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Tasks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="view-container">
+        <h1>Task List</h1>
+        <div class="controls">
+            <button onclick="window.location.href='MainActivity.html'">Back to Calendar</button>
+            <button onclick="toggleEditMode()">Edit Mode</button>
+            <button id="deleteButton" style="display: none;">Delete Selected</button>
+        </div>
+
+        <div id="taskList"></div>
+    </div>
+
+    <!-- Firebase and App Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/tasks.js"></script>
+</body>
+</html>

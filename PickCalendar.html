@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pick Calendar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-card">
+            <h1>My Calendars</h1>
+            <button onclick="showCreateCalendar()" class="new-calendar-button">+ New Calendar</button>
+            <div id="calendarList" class="calendar-list"></div>
+        </div>
+    </div>
+
+    <!-- Create Calendar Modal -->
+    <div id="createCalendarModal" class="modal">
+        <div class="modal-content">
+            <h2>Create New Calendar</h2>
+            <input type="text" id="calendarName" placeholder="Calendar Name">
+            <div class="form-group">
+                <input type="text" id="calendarId" placeholder="Add Calendar by ID">
+                <button onclick="addCalendarById()" class="modal-button">Add by ID</button>
+            </div>
+            <div class="modal-buttons">
+                <button onclick="createCalendar()" class="modal-button">Create</button>
+                <button onclick="closeModal()" class="modal-button cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Calendar Modal -->
+    <div id="shareCalendarModal" class="modal">
+        <div class="modal-content">
+            <h2>Share Calendar</h2>
+            <p>Calendar ID:</p>
+            <div class="share-id-container">
+                <input type="text" id="shareCalendarId" readonly>
+                <button onclick="copyCalendarId()" class="modal-button">Copy ID</button>
+            </div>
+            <div class="modal-buttons">
+                <button onclick="closeShareModal()" class="modal-button">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase and App Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>

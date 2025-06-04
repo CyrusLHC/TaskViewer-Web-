@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="edit-container">
+        <h1>Edit Task</h1>
+        
+        <div class="form-group">
+            <label>Task Title:</label>
+            <input type="text" id="editTaskTitle" class="form-input">
+        </div>
+        
+        <div class="form-group">
+            <label>Deadline:</label>
+            <input type="date" id="editTaskDate" class="form-input">
+        </div>
+        
+        <div class="form-group">
+            <label>Start Time:</label>
+            <input type="time" id="editStartTime" class="form-input">
+        </div>
+        
+        <div class="form-group">
+            <label>End Time:</label>
+            <input type="time" id="editEndTime" class="form-input">
+        </div>
+        
+        <div class="form-group">
+            <label>Important:</label>
+            <input type="checkbox" id="editImportant" class="form-checkbox">
+        </div>
+        
+        <div class="form-buttons">
+            <button onclick="saveTask()" class="modal-button">Save Changes</button>
+            <button onclick="window.location.href='MainActivity.html'" class="modal-button cancel">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Firebase and App Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/tasks.js"></script>
+</body>
+</html>
