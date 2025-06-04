@@ -21,3 +21,4 @@ HTML, Css, JavaSCript, Firebase, DeepSeep API-R1:8b model
 + Notification function
 
 # Preview
+![image](picture or gif url)
