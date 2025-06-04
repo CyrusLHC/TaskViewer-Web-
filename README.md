@@ -3,7 +3,21 @@ TaskViewer, developed as an Android and web application, addresses these challen
 # Technologies
 HTML, Css, JavaSCript, Firebase, DeepSeep API-R1:8b model
 # Highlights
-Design and Architecture
-RESTful API
-CRUD Operation
-One web server (with database)
+**Design and Architecture**
+  + Simple design, easy to understand
+  + Local Host AI to avoid server anomalies
+  + Cross-platform shared database
+    
+**AI Funtions**
++ AI-assisted management of tasks
+  
+**Security**
++ Email Requirement
++ Strong Password Requirement/Restriction
+  
+**Between Users**
++ Easily share Tasks or Lists
++ Conveniently view all Tasks
++ Notification function
+
+# Preview
